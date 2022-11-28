@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output
 
 app = Dash(__name__)
 
-df = pd.read_csv('C:/Users/YONSAI/Desktop/db/Dash/아보카도.csv', index_col = 0)
+df = pd.read_csv('./Avocado.csv', index_col = 0)
 
 app.layout = html.Div([
     html.Div([
