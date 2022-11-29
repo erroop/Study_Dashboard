@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
 
-df = pd.read_csv('C:/Users/YONSAI/Desktop/db/Dash/Diabetes_Dash/diabetes.csv')
+df = pd.read_csv('./diabetes.csv')
 df=df.sort_values("Age")
 df['Outcome'] = df['Outcome'].astype(str)
 df['Outcome'] = df['Outcome'].str.replace('0', 'negative')
